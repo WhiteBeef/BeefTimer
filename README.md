@@ -9,7 +9,7 @@ BeefTimer
 Для получения списка команд, введите /beeftimer help
 
 <h3>Права</h3>
-- beeftimer.help
+<p>- beeftimer.help</p>
 - beeftimer.stop
 - beeftimer.start
 - beeftimer.continue
