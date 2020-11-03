@@ -12,7 +12,10 @@ BeefTimer
 2. Перезагрузите плагин/сервер.
 
 <h3>Команды</h3>
-Для получения списка команд, введите /beeftimer help
+/beeftimer help - получение списка команд
+/beeftimer start - перезапустить таймер
+/beeftimer stop - преждевременно остановить таймер
+/beeftimer continue - продолжить таймер с момента остановки
 
 <h3>Права</h3>
 <p>- beeftimer.help</p>
