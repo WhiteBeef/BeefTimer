@@ -10,6 +10,6 @@ BeefTimer
 
 <h3>Права</h3>
 <p>- beeftimer.help</p>
-- beeftimer.stop
-- beeftimer.start
-- beeftimer.continue
+<p>- beeftimer.stop</p>
+<p>- beeftimer.start</p>
+<p>- beeftimer.continue</p>
