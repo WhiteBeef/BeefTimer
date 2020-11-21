@@ -1,0 +1,8 @@
+name: BeefTimer
+version: 1.0.3
+main: ru.whitebeef.beeftimer.Main
+api-version: 1.13
+author: WhiteBeef
+commands:
+  beeftimer:
+    aliases: [bt]

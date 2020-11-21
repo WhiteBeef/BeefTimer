@@ -1,17 +1,41 @@
 package ru.whitebeef.beeftimer.commands;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import javax.annotation.Nonnull;
+
 import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.TabExecutor;
 
 import ru.whitebeef.beeftimer.Main;
 import ru.whitebeef.beeftimer.utils.Utils;
 
-public class BeefTimer implements CommandExecutor {
+public class BeefTimer implements TabExecutor {
 	Main plugin;
 
 	public BeefTimer(Main plugin) {
 		this.plugin = plugin;
+	}
+
+	static List<String> words = new ArrayList<String>();
+
+	static {
+		String[] array = { "help", "stop", "continue", "start" };
+		words.addAll(Arrays.asList(array));
+	}
+
+	@Override
+	public List<String> onTabComplete(@Nonnull CommandSender sender, @Nonnull Command cmd, @Nonnull String s,
+			@Nonnull String[] args) {
+		switch (args.length) {
+		case 1:
+			return words;
+		default:
+			return new ArrayList<>();
+		}
 	}
 
 	@Override
